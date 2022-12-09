@@ -5,6 +5,7 @@ import SuperadminDashboard from "./superAdminDashboard";
 function App() {
   return (
     <div className="app">
+      <SuperadminDashboard />
       <AdminDashboard />
     </div>
   );

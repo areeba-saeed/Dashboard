@@ -1,12 +1,21 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./login.css";
 
 function Login() {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
 
   const [password, setPassword] = useState("");
 
- 
+  const handleNavigate = () => {
+    if (email == "superadmin@gmail.com" && password == "superadmin") {
+      navigate("/superadmindashboard");
+    }
+    if (email == "admin@gmail.com" && password == "admin") {
+      navigate("/admindashboard");
+    }
+  };
 
   return (
     <div>
@@ -57,6 +66,7 @@ function Login() {
                     type="submit"
                     value="Log In"
                     class="btn btn-block btn-primary"
+                    onClick={handleNavigate}
                   />
                 </form>
               </div>

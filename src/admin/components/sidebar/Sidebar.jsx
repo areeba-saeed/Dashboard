@@ -27,7 +27,7 @@ const Sidebar = () => {
       <div className="center">
         <ul>
           <p className="title">MAIN</p>
-          <Link to="/dashboard" style={{ textDecoration: "none" }}>
+          <Link to="/admindashboard" style={{ textDecoration: "none" }}>
             <li>
               <DashboardIcon className="icon" />
               <span>Dashboard</span>
@@ -95,7 +95,7 @@ const Sidebar = () => {
               <span>Terms & Conditions</span>
             </li>
           </Link>
-          <Link to="/login" style={{ textDecoration: "none" }}>
+          <Link to="/" style={{ textDecoration: "none" }}>
             <li>
               <LogoutIcon className="icon" />
               <span>Logout</span>

@@ -26,7 +26,7 @@ function Adminroutes() {
       <BrowserRouter>
         <Routes>
           <Route path="/">
-            <Route path="/dashboard" element={<Home />} />
+            <Route path="/admindashboard" element={<Home />} />
             <Route path="/" element={<Login />} />
             <Route path="vendors">
               <Route index element={<Vendors />} />
